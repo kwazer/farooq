@@ -1,0 +1,81 @@
+<html>
+	<style>
+		html
+		{
+			margin:0;
+		}
+		body
+		{
+			margin:0;
+		}
+		div
+		{
+			margin:0;
+		}
+		#main
+		{
+			border:1px solid grey;
+			margin:0 auto;
+			max-width:1000px;
+			height:500px;
+			padding:2px;
+			position:relative;
+			background:url("pic.png") center no-repeat;
+		}
+		#logo
+		{
+			margin:0px;
+			padding-top:10px;
+			padding-bottom:2px;
+			font-size:25px;
+			letter-spacing:12px;
+			width:100%;
+			text-align:center;
+			border-bottom-style:solid;
+			border-color:white;
+			border-width:2px;
+			color:black;
+//			background:white;
+		}
+		.inf
+		{
+			border:1px solid grey;
+		}
+		
+	</style>
+	<script>
+		function fireaway()
+		{
+			alert(" you have entered successfully");
+		}
+	</script>
+	<head>
+		<title>
+			Vintage Voyages
+		</title>
+	</head>
+	<body style="padding:2px;">
+		<div id = "main">
+			<p id = "logo" >FAROOQ ELECTRONICS</p>
+			<br><br><br>
+			
+			<table style = "margin-left:100px;"><tr>
+				<form name = "userform" method = "post" action = "checklogin.php">
+				<td>
+			<span style = "letter-spacing:3px;">User Name : </span></td><td><input name = "username" class = "inf" style = "width:250px;height:28px;padding:2px;" type = "text" autofocus id = "username"/>
+			</td></tr>
+			<tr>
+				<td>
+				<span style = "letter-spacing:3px;">Password : </span></td><td><input name = "password" class = "inf" style = "width:250px;height:28px;padding:2px;" type = "password" id="password" onkeypress = "if(event.keyCode == 13) document.getElementById('pasb').click;"/>
+			</td></tr>
+			<tr><td></td><td><input type = "submit" value = "LOGIN" id= "pasb" style =  "float:right;font-size:12px;width:100px;border:1px solid grey;letter-spacing:2px;padding:2px;"/></td>
+			</form>
+			</tr>
+			</table>
+			<br>
+			<span style = "margin-left:100px;font-size:12px;letter-spacing:2px;">Note : Press Enter to login</span>
+			
+		</div>
+		
+	</body>
+</html>
